@@ -14,10 +14,21 @@ const connect = function() {
 
   conn.on('connect', (connect) => {
     console.log('Successfully Connected');
+
+    conn.write("Name: CD1");
+    
+    // conn.write("Move: up");
+    // setTimeout(()=>{
+    //   conn.write;
+    // }, 50);
+
+    // conn.write("Move: down");
+    // conn.write("Move: left");
+    // conn.write("Move: right");
+
   });
 
-  conn.write("Name: CD1")
-  
+
   return conn;
 };
 
